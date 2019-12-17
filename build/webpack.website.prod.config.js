@@ -1,5 +1,5 @@
 /**
- * 文档网站生产构建
+ * 网站生产构建
  */
 process.env.NODE_ENV = 'production';
 const path = require('path');
