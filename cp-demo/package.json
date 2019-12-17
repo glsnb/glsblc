@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-website": "webpack --color --progress --config build/webpack.website.prod.config.js && rm -rf docs/static docs/index.html && mv website/dist/* docs/",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -28,7 +29,11 @@
     "less-loader": "^5.0.0",
     "vue-cli-plugin-cp": "^0.0.8",
     "vue-cli-plugin-cp-template-data-report": "^0.0.5",
-    "vue-template-compiler": "^2.6.10"
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "clean-webpack-plugin": "^2.0.1",
+    "vue-template-compiler": "^2.6.10",
+    "html-loader": "^0.5.5",
+    "webpack-cli": "^3.3.10"
   },
   "eslintConfig": {
     "root": true,
