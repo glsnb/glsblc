@@ -88,8 +88,8 @@ module.exports = merge(webpackBaseConfig, {
         }),
         new HtmlWebpackPlugin({
             inject: true,
-            filename: path.resolve(__dirname, '../public/dist/index.html'),
-            template: path.resolve(__dirname, '../public/index.html')
+            filename: path.resolve(__dirname, '../docs/index.html'),
+            template: path.resolve(__dirname, '../docs/index.html')
         }),
         new CleanWebpackPlugin()
     ]
